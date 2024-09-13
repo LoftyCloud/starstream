@@ -11,13 +11,13 @@
 
 管理员密码：admin123
 
-有时间会继续完善项目的功能，并且解决部署遇到的问题
+有时间会先解决部署遇到的问题，并且会继续完善项目的功能。
 
 ## 前端
-前端基于vue3和vite
+前端基于vue3和vite。
 
 ## 后端
-项目后端使用Go语言编写，使用GO+Gin+Gorm+Redis框架
+项目后端使用Go语言编写，使用GO+Gin+Gorm+Redis框架。
 
 技术栈：Gin, Gorm, MySQL, Redis, FFmpeg(视频处理)
 
