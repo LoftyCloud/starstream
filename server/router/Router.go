@@ -27,18 +27,18 @@ import (
  * @Descripttion: 路由管理 - Router Manager
  */
 func Router(router *gin.Engine) *gin.Engine {
-	// r := gin.Default()
+	r := gin.Default()
 
-	// r.Use(func(c *gin.Context) {
-	// 	c.Header("Access-Control-Allow-Origin", "*") // 允许所有来源
-	// 	c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-	// 	c.Header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept")
-	// 	if c.Request.Method == http.MethodOptions {
-	// 		c.AbortWithStatus(http.StatusNoContent)
-	// 		return
-	// 	}
-	// 	c.Next()
-	// })
+	r.Use(func(c *gin.Context) {
+		c.Header("Access-Control-Allow-Origin", "*") // 允许所有来源
+		c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+		c.Header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept")
+		if c.Request.Method == http.MethodOptions {
+			c.AbortWithStatus(http.StatusNoContent)
+			return
+		}
+		c.Next()
+	})
 
 	//读取配置文件 - Read The Configuration File
 	path, err := os.Getwd()
