@@ -1,16 +1,10 @@
 /*
  * @Descripttion: 系统模型 - System Model
- * @Author: William Wu
- * @Date: 2022/06/17 下午 06:19
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/17 下午 06:19
  */
 package SystemModel
 
 /**
  * @Descripttion: 磁盘信息模型 - Disk MOdel
- * @Author: William Wu
- * @Date: 2022/06/17 下午 06:20
  */
 type UsageStat struct {
 	Path              string  `json:"path"`

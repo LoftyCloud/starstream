@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 数据库工具 - DataBase Utils
- * @Author: William Wu
- * @Date: 2022-05-21 11:37:13
- * @LastEditors: William Wu
- * @LastEditTime: 2022-05-21 13:18:21
  */
 package DataBaseUtils
 
@@ -74,8 +70,6 @@ func init() {
 
 /**
  * @Descripttion: 数据库连接对象 - DataBase Connection Object
- * @Author: William Wu
- * @Date: 2022/05/23 下午 04:06
  */
 func GoDB() *gorm.DB {
 	return _db

@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 视频类型缓存区 - Class Cache
- * @Author: William Wu
- * @Date: 2022/06/03 下午 02:39
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/03 下午 02:39
  */
 package ClassCache
 
@@ -13,6 +9,7 @@ import (
 	"VideoHubGo/utils/RedisUtils"
 	"context"
 	"encoding/json"
+
 	"github.com/go-redis/redis/v8"
 )
 

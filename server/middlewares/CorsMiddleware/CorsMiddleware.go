@@ -1,15 +1,12 @@
 /*
  * @Descripttion: 跨域中间件 - Cors Middleware
- * @Author: William Wu
- * @Date: 2022/06/18 下午 12:34
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/18 下午 12:34
  */
 package CorsMiddleware
 
 import (
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func Cors() gin.HandlerFunc {

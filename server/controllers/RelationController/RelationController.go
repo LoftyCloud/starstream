@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 用户收藏控制层 - Relation Controller
- * @Author: William Wu
- * @Date: 2022/06/09 下午 03:20
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/09 下午 03:20
  */
 package RelationController
 
@@ -11,14 +7,13 @@ import (
 	"VideoHubGo/models/RelationModel"
 	"VideoHubGo/services/RelationServices"
 	"VideoHubGo/utils/JsonUtils"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 /**
  * @Descripttion: 获取用户收藏信息 - Get user favorite information
- * @Author: William Wu
- * @Date: 2022/06/09 下午 03:22
  * @Param: 分页 - page (int)
  * @Param: 数据条数 - size (int)
  * @Return: Json
@@ -51,8 +46,6 @@ func GetRelationList(ctx *gin.Context) {
 
 /**
  * @Descripttion: 搜索用户收藏信息 - Search User Favorite information
- * @Author: William Wu
- * @Date: 2022/06/10 上午 10:29
  * @Param: 分类 - cid (int)
  * @Param: 分页 - page (int)
  * @Param: 数据条数 - size (int)
@@ -90,8 +83,6 @@ func FindRelationClassList(ctx *gin.Context) {
 
 /**
  * @Descripttion: 查询收藏中的视频 - Query videos in your collection
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:28
  * @Param: 分类 - cid (int)
  * @Param: 关键字 - key (string)
  * @Param: 分页 - page (int)
@@ -131,8 +122,6 @@ func SearchRelationClassList(ctx *gin.Context) {
 
 /**
  * @Descripttion: 添加收藏 - Add Relation
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:30
  * @Param: 用户ID - uid (int)
  * @Param: 视频ID - vid (int)
  * @Return: Json
@@ -161,8 +150,6 @@ func RelationVideo(ctx *gin.Context) {
 
 /**
  * @Descripttion: 取消收藏 - Delete Relation
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:31
  * @Param: 用户ID - uid (int)
  * @Param: 视频ID - vid (int)
  * @Return: Json
@@ -185,8 +172,6 @@ func RemoveRelation(ctx *gin.Context) {
 
 /**
  * @Descripttion: 检查用户是否已经收藏 - Check User Is Already Relation
- * @Author: William Wu
- * @Date: 2022/06/25 下午 11:07
  * @Param: 用户ID - uid (int)
  * @Param: 视频ID - vid (int)
  * @Return: Json

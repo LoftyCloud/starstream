@@ -34,6 +34,7 @@ func UserLogin(ctx *gin.Context) {
 		ctx.JSON(http.StatusOK, JsonUtils.JsonResult(600, "参数错误 - Parameter error", ""))
 		return
 	}
+	
 	if userData.Account == "" || userData.Password == "" {
 		ctx.JSON(http.StatusOK, JsonUtils.JsonResult(201, "请输入正确的账号密码 - Please enter the correct account password", ""))
 		return

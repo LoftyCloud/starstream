@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 后台服务层 - Admin Services
- * @Author: William Wu
- * @Date: 2022/06/30 上午 11:40
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/30 上午 11:40
  */
 package AdminServices
 
@@ -24,8 +20,6 @@ var db = DataBaseUtils.GoDB()
 
 /**
  * @Descripttion: 管理员登录 - Admin Login
- * @Author: William Wu
- * @Date: 2022/06/30 上午 11:58
  * @Param: Account (string)
  * @Param: Password (string)
  * @Return: UserModel User
@@ -68,8 +62,6 @@ func GetVideoList(vid string, detail string, cid int, size int, offset int) ([]V
 
 /**
  * @Descripttion: 搜索未分类的视频 - Seach no cid video data
- * @Author: William Wu
- * @Date: 2022/07/08 下午 06:04
  * @Param: size (int)
  * @Param: page (int)
  * @Return: videoData (videoModel.VideoAdminRe), count (int)
@@ -83,8 +75,6 @@ func GetNoCidVideoList(size int, offset int) ([]VideoModel.VideoAdminRe, int) {
 
 /**
  * @Descripttion: 视频信息修改 - Update Video Informatica
- * @Author: William Wu
- * @Date: 2022/06/30 下午 09:26
  * @Param: VideoEdit (struct)
  * @Return: Result (int)
  */
@@ -97,8 +87,6 @@ func EditVideoInformation(VideoData VideoModel.VideoEdit) int {
 
 /**
  * @Descripttion: 编辑视频分类信息 - Edit video cid information
- * @Author: William Wu
- * @Date: 2022/07/05 下午 08:47
  * @Param: cid (int)
  * @Param: vid (int)
  * @Return: Result (int)
@@ -112,8 +100,6 @@ func EditVideoCidInformation(cid int, vid int) int {
 
 /**
  * @Descripttion: 软删除视频 - Delete video
- * @Author: William Wu
- * @Date: 2022/06/30 下午 09:51
  * @Param: vid (int)
  * @Return: Result (int)
  */
@@ -130,8 +116,6 @@ func DeleteVideoInformation(vid int) (int, string) {
 
 /**
  * @Descripttion: 后台获取用户数据 - Admin get user data
- * @Author: William Wu
- * @Date: 2022/07/05 下午 11:04
  * @Param: uid (int)
  * @Param: account (string)
  * @Param: username (string)
@@ -158,8 +142,6 @@ func GetUserList(uid int, account string, username string, size int, offset int)
 
 /**
  * @Descripttion: 用户信息修改 - Update User Information
- * @Author: William Wu
- * @Date: 2022/06/30 下午 10:03
  * @Param: EditUser (struct)
  * @Return: Result (int)
  */
@@ -181,8 +163,6 @@ func EditUserInformation(userData UserModel.EditUser) int {
 
 /**
  * @Descripttion: 提升/下降用户权限 - Promote or Decline User authority
- * @Author: William Wu
- * @Date: 2022/07/05 下午 11:23
  * @Param: uid (int)
  * @Param: isadmin (int)
  * @Return: Result (int)
@@ -196,8 +176,6 @@ func AuthorityUserIsadmin(uid int, isadmin int) int {
 
 /**
  * @Descripttion: 提升/下降用户权限 - Promote or Decline User authority
- * @Author: William Wu
- * @Date: 2022/07/05 下午 11:24
  * @Param: uid (int)
  * @Param: isuploader (int)
  * @Return: Result (int)
@@ -211,8 +189,6 @@ func AuthorityUserIsuploader(uid int, isuploader int) int {
 
 /**
  * @Descripttion: 软删除用户 - Delete User Information
- * @Author: William Wu
- * @Date: 2022/06/30 下午 10:39
  * @Param: uid (int)
  * @Return: Result (int)
  */
@@ -225,8 +201,6 @@ func DeleteUserInformation(uid int) int {
 
 /**
  * @Descripttion: 创建新视频分类 - Created new video class
- * @Author: William Wu
- * @Date: 2022/07/09 上午 11:11
  * @Param: classname (string)
  * @Return: Result (int)
  */
@@ -254,8 +228,6 @@ func CreatedClassInformarion(classname string) int {
 
 /**
  * @Descripttion: 查询已被删除的视频分类 - Query isdelete video class
- * @Author: William Wu
- * @Date: 2022/07/09 上午 11:12
  * @Return: cid (int)
  */
 func IsDeleteClassInformation() int {
@@ -266,8 +238,6 @@ func IsDeleteClassInformation() int {
 
 /**
  * @Descripttion: 后台搜索获取视频分类数据 - Admin get video class data
- * @Author: William Wu
- * @Date: 2022/07/05 下午 09:21
  * @Param: cid (int)
  * @Param: classname (string)
  * @Param: size (int)
@@ -290,8 +260,6 @@ func GetClassList(cid int, classname string, size int, offset int) ([]ClassModel
 
 /**
  * @Descripttion: 修改视频分类信息 - Update Video Class Information
- * @Author: William Wu
- * @Date: 2022/06/30 下午 11:25
  * @Param: ClassRe (struct)
  * @Return: Result (int)
  */
@@ -304,8 +272,6 @@ func EditClassInformation(classData ClassModel.ClassRe) int {
 
 /**
  * @Descripttion: 软删除视频分类信息 - Delete Video Class Information
- * @Author: William Wu
- * @Date: 2022/06/30 下午 11:26
  * @Param: cid (int)
  * @Return: Result (int)
  */
@@ -318,8 +284,6 @@ func DeleteClassInformation(cid int) int {
 
 /**
  * @Descripttion: 后台更改用户密码 - Admin edit user password
- * @Author: William Wu
- * @Date: 2022/07/06 上午 10:50
  * @Param: uid (int)
  * @Param: password (string)
  * @Return: Reslut (int)
@@ -336,8 +300,6 @@ func UpdatePassword(uid int, newPassword string) (string, int) {
 
 /**
  * @Descripttion: 获取后台二次编码状态 - Get back-end recode status
- * @Author: William Wu
- * @Date: 2022/07/06 下午 06:59
  * @Return: ReCode (int)
  */
 func GetReCodeStatus() int {
@@ -348,8 +310,6 @@ func GetReCodeStatus() int {
 
 /**
  * @Descripttion: 更改后台二次编码状态 - Change back-end recode status
- * @Author: William Wu
- * @Date: 2022/07/06 下午 07:00
  * @Return: Result (int)
  */
 func ChangeReCodeStatus(status int) int {
@@ -361,8 +321,6 @@ func ChangeReCodeStatus(status int) int {
 
 /**
  * @Descripttion: 删除指定图片 - Delete photo
- * @Author: William Wu
- * @Date: 2022/07/09 上午 12:04
  * @Param: pid (int)
  * @Return: Result (int)
  */
@@ -379,8 +337,6 @@ func DeletePhotoInformation(pid int) (int, string) {
 
 /**
  * @Descripttion: 后台登录日志记录 - Back-end login log
- * @Author: William Wu
- * @Date: 2022/07/16 上午 09:51
  * @Param: uid (int)
  * @Param: account (string)
  * @Param: username (string)
@@ -407,8 +363,6 @@ func LogUserLogin(uid int, account string, username string, userIp string) {
 
 /**
  * @Descripttion: 查询已被删除的日志 - Query isdelete log
- * @Author: William Wu
- * @Date: 2022/07/16 上午 09:55
  * @Return: Id (int)
  */
 func isDeleteLoginLogs() int {
@@ -419,8 +373,6 @@ func isDeleteLoginLogs() int {
 
 /**
  * @Descripttion: 清空后台登录日志 - clean back-end login log
- * @Author: William Wu
- * @Date: 2022/07/16 上午 10:41
  * @Return: Result (int)
  */
 func CleanLoginLogs(uid int) int {
@@ -432,8 +384,6 @@ func CleanLoginLogs(uid int) int {
 
 /**
  * @Descripttion: 获取管理员的登录日志 - Get admin user login logs
- * @Author: William Wu
- * @Date: 2022/07/16 下午 12:35
  * @Param:
  * @Return:
  */

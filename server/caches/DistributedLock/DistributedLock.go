@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 分布式锁 - Distributed Lock
- * @Author: William Wu
- * @Date: 2022/07/14 下午 03:02
- * @LastEditors: William Wu
- * @LastEditTime: 2022/07/14 下午 03:02
  */
 package DistributedLock
 

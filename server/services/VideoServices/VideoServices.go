@@ -90,6 +90,7 @@ func UploadVideo(uid int, detail string, cid int, vtime string) int {
 	videoData.Create_Time = time.Now()
 	videoData.Update_Time = time.Now()
 	delVid := FindIsdeleteVideoVid()
+	
 	if delVid != 0 {
 		videoData.Vid = delVid
 		videoData.Isdelete = 0
@@ -98,6 +99,7 @@ func UploadVideo(uid int, detail string, cid int, vtime string) int {
 	} else {
 		db.Table("videodata").Create(&videoData)
 	}
+
 	return videoData.Vid
 }
 

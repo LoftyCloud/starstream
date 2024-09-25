@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 后台缓冲层 - Admin Cache
- * @Author: William Wu
- * @Date: 2022/07/06 下午 06:04
- * @LastEditors: William Wu
- * @LastEditTime: 2022/07/06 下午 06:04
  */
 package AdminCache
 

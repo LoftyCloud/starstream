@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 用户收藏服务层 - Relation Services
- * @Author: William Wu
- * @Date: 2022/06/09 下午 03:27
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/09 下午 03:27
  */
 package RelationServices
 
@@ -18,8 +14,6 @@ var db = DataBaseUtils.GoDB()
 
 /**
  * @Descripttion: 查询用户收藏信息集合 - Query user favorite information collection
- * @Author: William Wu
- * @Date: 2022/06/09 下午 03:29
  * @Param: uid (int)
  * @Param: size (int)
  * @Param: offset (int)
@@ -34,8 +28,6 @@ func FindRelationByVideoList(uid int, size int, offset int) ([]VideoModel.VideoR
 
 /**
  * @Descripttion: 查询用户收藏分类信息集合- Query user favorite information class collection
- * @Author: William Wu
- * @Date: 2022/06/10 上午 10:01
  * @Param: uid (int)
  * @Param: cid (int)
  * @Param: size (int)
@@ -51,8 +43,6 @@ func FindRelationByVideoList_Class(uid int, cid int, size int, offset int) ([]Vi
 
 /**
  * @Descripttion: 搜索用户收藏信息集合(包含分类) - Search user favorite information collection (including classification)
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:35
  * @Param: uid (int)
  * @Param: cid (int)
  * @Param: key (string)
@@ -73,8 +63,6 @@ func SearchRelationByVideoList_Class(uid int, cid int, key string, size int, off
 
 /**
  * @Descripttion: 添加用户收藏 - Add Relation
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:38
  * @Param: uid (int)
  * @Param: vid (int)
  * @Return: success (int)
@@ -102,8 +90,6 @@ func AddRelation(uid int, vid int) int {
 
 /**
  * @Descripttion: 取消用户收藏 - Delete Relation
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:39
  * @Param: uid (int)
  * @Param: vid (int)
  * @Return: success (int)
@@ -118,8 +104,6 @@ func DeleteRelation(uid int, vid int) int {
 
 /**
  * @Descripttion: 查询已被软删除的收藏信息 - Query IsDelete Relation
- * @Author: William Wu
- * @Date: 2022/06/10 下午 03:59
  * @Return: id (int)
  */
 func IsDeleteRelation() int {
@@ -130,8 +114,6 @@ func IsDeleteRelation() int {
 
 /**
  * @Descripttion: 查询该用户是否已收藏 - Query User Is Relation
- * @Author: William Wu
- * @Date: 2022/06/10 下午 04:09
  * @Param: uid (int)
  * @Param: vid (int)
  * @Return: id (int)

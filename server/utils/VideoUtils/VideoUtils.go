@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 视频信息工具 - Video Utils
- * @Author: William Wu
- * @Date: 2022/06/16 下午 01:30
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/16 下午 01:30
  */
 package VideoUtils
 
@@ -23,8 +19,6 @@ type entityBoxHeader struct {
 
 /**
  * @Descripttion: 获取视频总时长 - Get Video Total Time
- * @Author: William Wu
- * @Date: 2022/06/16 下午 01:35
  * @Param: filePath (string)
  * @Return: time (string)
  */
@@ -82,8 +76,6 @@ func GetVideoTotalTime(filePath string) (duration string, err error) {
 
 /**
  * @Descripttion: 获取头信息 - Get Header Box Info
- * @Author: William Wu
- * @Date: 2022/06/16 下午 01:35
  * @Param: data ([]byte)
  * @Return: entityBoxHeader
  */
@@ -95,8 +87,6 @@ func getHeaderBoxInfo(data []byte) (boxHeader entityBoxHeader) {
 
 /**
  * @Descripttion: 获取信息头类型 - Get Fourcc Type
- * @Author: William Wu
- * @Date: 2022/06/16 下午 01:36
  * @Param: entityBoxHeader
  * @Return: fourccType (string)
  */
@@ -107,8 +97,6 @@ func getFourccType(boxHeader entityBoxHeader) (fourccType string) {
 
 /**
  * @Descripttion: 将秒转成时分秒格式 - Resolve Time
- * @Author: William Wu
- * @Date: 2022/06/16 下午 01:37
  * @Param: seconds (uint32)
  * @Return: time (string)
  */

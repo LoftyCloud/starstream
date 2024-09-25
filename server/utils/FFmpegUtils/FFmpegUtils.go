@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 转码库工具 - FFmpeg Utils
- * @Author: William Wu
- * @Date: 2022/06/16 上午 11:47
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/16 上午 11:47
  */
 
 // 注意:此部分工具都必须要求系统环境内有FFmpeg的环境
@@ -15,8 +11,6 @@ import "VideoHubGo/utils/SystemUtils"
 
 /**
  * @Descripttion: 截取视频封面 - Capture video cover
- * @Author: William Wu
- * @Date: 2022/06/16 下午 03:39
  * @Param: filePath (string)
  * @Param: coverPath (string)
  * @Return: result (int)
@@ -42,8 +36,6 @@ func GetVideoCover(filePath string, coverPath string) int {
 
 /**
  * @Descripttion: 二次编码视频 - Recode Video
- * @Author: William Wu
- * @Date: 2022/06/16 下午 03:44
  * @Param: filePath (string)
  * @Param: outPath (string)
  * @Return: result (int)

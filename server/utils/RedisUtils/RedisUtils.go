@@ -1,9 +1,5 @@
 /*
  * @Descripttion: Redis工具 - Redis Utils
- * @Author: William Wu
- * @Date: 2022/05/27 下午 05:11
- * @LastEditors: William Wu
- * @LastEditTime: 2022/05/27 下午 05:11
  */
 package RedisUtils
 
@@ -11,18 +7,17 @@ import (
 	"VideoHubGo/utils/LogUtils"
 	"context"
 	"fmt"
-	"github.com/go-redis/redis/v8"
-	"github.com/spf13/viper"
 	"os"
 	"time"
+
+	"github.com/go-redis/redis/v8"
+	"github.com/spf13/viper"
 )
 
 var RedisClient *redis.Client
 
 /**
  * @Descripttion: Redis连接 - Redis Connection
- * @Author: William Wu
- * @Date: 2022/05/27 下午 10:55
  * @Return: Redis
  */
 func init() {

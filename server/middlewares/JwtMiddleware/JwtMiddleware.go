@@ -1,9 +1,5 @@
 /*
  * @Descripttion: Jwt Middleware
- * @Author: William Wu
- * @Date: 2022-05-21 16:59:40
- * @LastEditors: William Wu
- * @LastEditTime: 2022-05-21 18:34:51
  */
 package JwtMiddleware
 
@@ -22,8 +18,6 @@ import (
 
 /**
  * @Descripttion:  Jwt模型 - Jwt Model
- * @Author: William Wu
- * @Date: 2022/05/23 下午 04:02
  */
 type JwtModel struct {
 	UserId     int    `json:"uid"`
@@ -36,8 +30,6 @@ type JwtModel struct {
 
 /**
  * @Descripttion: 生成Token - Create Token
- * @Author: William Wu
- * @Date: 2022/05/21 下午 05:01
  * @Param: 用户UID - User UId
  * @Param: 用户账号 - User Account
  * @Param: 用户昵称 - User Name
@@ -88,8 +80,6 @@ func CreateToken(userId int, account string, userName string, isAdmin int, isUpl
 
 /**
  * @Descripttion: 验证Token - Check Token
- * @Author: William Wu
- * @Date: 2022/05/23 下午 04:03
  * @Param: token
  * @Return: JwtModel
  */
@@ -123,8 +113,6 @@ func CheckToken(token string) (*JwtModel, bool) {
 
 /**
  * @Descripttion: JWT中间件 - JWT Middleware
- * @Author: William Wu
- * @Date: 2022/05/23 下午 04:03
  * @Param: *gin
  * @Return: Middleware Controller
  */
@@ -170,8 +158,6 @@ func JwtMiddleware() gin.HandlerFunc {
 
 /**
  * @Descripttion: 后台JWT中间件检测 - Admin JWT Middleware Check
- * @Author: William Wu
- * @Date: 2022/06/30 下午 12:00
  * @Param: *gin
  * @Return: Middleware Controller
  */

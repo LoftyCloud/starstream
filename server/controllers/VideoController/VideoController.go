@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 视频控制层 - Video Controller
- * @Author: William Wu
- * @Date: 2022/05/29 下午 05:05
- * @LastEditors: William Wu
- * @LastEditTime: 2022/05/29 下午 05:05
  */
 package VideoController
 

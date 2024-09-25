@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 图片控制层 Photo Controller
- * @Author: William Wu
- * @Date: 2022/07/08 下午 10:40
- * @LastEditors: William Wu
- * @LastEditTime: 2022/07/08 下午 10:40
  */
 package PhotoController
 
@@ -13,18 +9,17 @@ import (
 	"VideoHubGo/services/PhotoServices"
 	"VideoHubGo/utils/JsonUtils"
 	"VideoHubGo/utils/LogUtils"
+	"net/http"
+
 	"github.com/gin-gonic/gin"
 	"golang.org/x/sync/singleflight"
-	"net/http"
 )
 
-//使用SingleFlight防止Redis缓存击穿
+// 使用SingleFlight防止Redis缓存击穿
 var sfg singleflight.Group
 
 /**
  * @Descripttion: 获取图片数据集 - Get photo data list
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:27
  * @Param: PhotoModel PhotoSearch (struct)
  * @Return: Json
  */

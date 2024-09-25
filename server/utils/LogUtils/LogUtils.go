@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 日志工具 - Log Utils
- * @Author: William Wu
- * @Date: 2022/05/27 下午 11:13
- * @LastEditors: William Wu
- * @LastEditTime: 2022/05/27 下午 11:13
  */
 package LogUtils
 

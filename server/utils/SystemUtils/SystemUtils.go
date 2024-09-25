@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 系统工具 - System Utils
- * @Author: William Wu
- * @Date: 2022/06/16 上午 11:08
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/16 上午 11:08
  */
 package SystemUtils
 
@@ -11,15 +7,14 @@ import (
 	"VideoHubGo/models/SystemModel"
 	"VideoHubGo/utils/LogUtils"
 	"bytes"
-	"github.com/shirou/gopsutil/disk"
 	"os/exec"
 	"runtime"
+
+	"github.com/shirou/gopsutil/disk"
 )
 
 /**
  * @Descripttion: 获取当前操作系统环境 - Get current operating system environment
- * @Author: William Wu
- * @Date: 2022/06/16 上午 11:08
  * @Return: System (int)
  */
 func GetSystemInfo() int {
@@ -35,8 +30,6 @@ func GetSystemInfo() int {
 
 /**
  * @Descripttion: 执行Linux命令 - Execute linux commands
- * @Author: William Wu
- * @Date: 2022/06/16 上午 11:45
  * @Param: cmd (string)
  * @Return: result (string)
  */
@@ -54,8 +47,6 @@ func RunLinuxCommand(cmd string) (string, error) {
 
 /**
  * @Descripttion: 执行Windows命令 - Execute windows commands
- * @Author: William Wu
- * @Date: 2022/06/16 上午 11:46
  * @Param: cmd (string)
  * @Return: result (string)
  */
@@ -73,8 +64,6 @@ func RunWindowsCommand(cmd string) (string, error) {
 
 /**
  * @Descripttion: 获取磁盘信息 - Get Disk Info
- * @Author: William Wu
- * @Date: 2022/06/17 下午 06:18
  * @Param: filePath (string)
  * @Return: disk.UsageStat
  */

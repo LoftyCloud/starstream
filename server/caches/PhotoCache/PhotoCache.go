@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 图片缓存层 - Photo Cache
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:09
- * @LastEditors: William Wu
- * @LastEditTime: 2022/07/08 下午 11:09
  */
 package PhotoCache
 
@@ -13,9 +9,10 @@ import (
 	"VideoHubGo/utils/RedisUtils"
 	"context"
 	"encoding/json"
-	"github.com/go-redis/redis/v8"
 	"strconv"
 	"time"
+
+	"github.com/go-redis/redis/v8"
 )
 
 var conn = RedisUtils.RedisClient

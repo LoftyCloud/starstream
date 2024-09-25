@@ -1,16 +1,13 @@
 /*
  * @Descripttion: 无效路由拦截器 - No Route Middlewares
- * @Author: William Wu
- * @Date: 2022/06/02 下午 04:56
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/02 下午 04:56
  */
 package NoRouteMiddleware
 
 import (
 	"VideoHubGo/utils/JsonUtils"
-	"github.com/gin-gonic/gin"
 	"net/http"
+
+	"github.com/gin-gonic/gin"
 )
 
 func NoRouteHttp(ctx *gin.Context) {

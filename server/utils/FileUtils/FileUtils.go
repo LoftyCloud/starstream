@@ -1,9 +1,5 @@
 /*
  * @Descripttion: 文件操作工具 - File Utils
- * @Author: William Wu
- * @Date: 2022/06/17 上午 11:11
- * @LastEditors: William Wu
- * @LastEditTime: 2022/06/17 上午 11:11
  */
 
 package FileUtils
@@ -17,8 +13,6 @@ import (
 
 /**
  * @Descripttion: 移动文件到指定位置 - Move file to specified location
- * @Author: William Wu
- * @Date: 2022/06/17 上午 11:12
  * @Param: filePath (string)
  * @Param: specifyPath (string)
  * @Return: result (int)
@@ -34,8 +28,6 @@ func MoveFile(oldFilePath string, specifyPath string) int {
 
 /**
  * @Descripttion: 删除指定文件 - Delete file to specified location
- * @Author: William Wu
- * @Date: 2022/06/17 上午 11:12
  * @Param: filePath (string)
  * @Return: result (int)
  */
@@ -50,8 +42,6 @@ func DeleteFile(filePath string) int {
 
 /**
  * @Descripttion: 输出文件夹下的所有文件 - Traverse All File
- * @Author: William Wu
- * @Date: 2022/06/17 上午 11:51
  * @Param: filePath (string)
  * @Return: result ([]AdminModel.AdminFileList)
  */
