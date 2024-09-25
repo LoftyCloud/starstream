@@ -6,7 +6,7 @@
 
 1、路由
 
-项目的路由文件都在router/Router.go文件中，静态资源、上传文件的规则以及Token的校验和JWT的中间件都在Router内配置。
+项目的路由文件在router/Router.go文件中，静态资源、上传文件的规则以及Token的校验和JWT的中间件都在Router内配置。
 
 2、控制器
 
