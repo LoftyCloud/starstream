@@ -18,7 +18,7 @@
 前端基于vue3和vite。
 
 ## 后端
-项目后端使用Go语言编写，使用GO+Gin+Gorm+Redis框架。
+项目后端使用Go语言编写，使用Gin框架。
 
 技术栈：Gin, Gorm, MySQL, Redis, FFmpeg(视频处理)
 
