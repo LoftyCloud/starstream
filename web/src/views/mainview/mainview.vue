@@ -12,7 +12,7 @@
 
 <!--			基于videoData循环添加video-->
 			<VH-VideoCover class="mar-3" @go="goVideo(item.vid)" @reset="getVideoData(this.curPage,21,this.cid)" v-for="(item,key) in videoData" :key="key" :vid="item.vid"
-										 :uid="item.uid" :cover="apiUrl+'/file/cover/'+item.vid+'.jpg'"
+										 :uid="item.uid" :cover="apiUrl+'file/cover/'+item.vid+'.jpg'"
 										 :title="item.detail" :time="item.vtime" :watch="item.watch" :master="item.username" :cid="itemData[item.cid-1].item">
 			</VH-VideoCover>
 

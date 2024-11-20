@@ -47,7 +47,7 @@ export default {
     created() {
         document.title ='StarSteam';
         this.vid=this.$route.query.vid
-        this.videoUrl = config.baseUrl.url +'/file/video/'+this.vid+'.mp4'
+        this.videoUrl = config.baseUrl.url +'file/video/'+this.vid+'.mp4'
         this.getVideoInfo()
         this.getIsRelation()
 

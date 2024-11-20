@@ -16,7 +16,7 @@
             <span title="视频播放量" class="iconColor iconfont icon-shipin">{{watch}}</span>
             <span @click="goMaster()" title="视频上传者" class="iconColor iconfont icon-supplier-ship">{{master}}</span>
 
-            <span @click="" title="类别" class="tag">{{cid}}</span>
+            <span title="类别" class="tag">{{cid}}</span>
 
             <span @click="showModal('edit')" title="编辑视频信息" class="iconColor2 iconfont icon-wenbenshuru"></span>
             <span @click="showModal('delete')" title="删除视频" class="iconColor2 iconfont icon-shanchu"></span>
@@ -167,7 +167,6 @@ export default {
     justify-content: center;
     margin-bottom: 20px;
     position: relative;
-    //border: 3px solid #1C1C1E;
 }
 
 .video-cover-box:hover {
@@ -196,9 +195,7 @@ export default {
     cursor: pointer;
     font-size: 40px;
     font-family: 'SimHei', 'Helvetica', 'Arial', sans-serif; /* 设置为黑体 */
-    //display: flex; /* 使用 Flexbox 布局 */
-    //justify-content: center; /* 水平方向居中对齐 */
-    //align-items: center; /* 垂直方向居中对齐 */
+
     text-align: center; /* 确保文本在块级元素中居中对齐 */
 
     border: 3px solid #1C1C1E;
@@ -230,8 +227,7 @@ export default {
 
 .cover-info{
     position: absolute;
-    //background-color: #FFFFFF;
-    //color: #F3CA40;
+
     width: auto;
     height: 25px;
     right: 0px;
@@ -268,7 +264,6 @@ export default {
 }
 
 .video-detail-box p{
-    //text-overflow: -o-ellipsis-lastline;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	display: -webkit-box;
@@ -281,9 +276,6 @@ export default {
     color: #FFFFFF;
 }
 
-.video-detail-box p:hover{
-    //color: #66a6ff;
-}
 .video-cover-box .video-info{
     width: 350px;
     height: 20px;
@@ -314,8 +306,6 @@ export default {
     border-radius: 7px; /* 圆角，使标签看起来更平滑 */
     border: 3px solid #333; /* 边框颜色，略浅，与背景形成对比 */
     margin-right: 15px; /* 为标签之间增加一点间距 */
-    //cursor: pointer; /* 鼠标悬停时显示为手型 */
-    //box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 轻微阴影效果，使标签更立体 */
     transition: background-color 0.3s ease; /* 添加交互时的过渡效果 */
 }
 

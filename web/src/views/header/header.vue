@@ -65,7 +65,7 @@ export default {
 	created() {
 		const origin = cookies.get('origin');
 		this.username = origin.username;
-		this.avatar = config.baseUrl.url +'/file/avatar/'+origin.avatar;
+		this.avatar = config.baseUrl.url +'file/avatar/'+origin.avatar;
 	},
 
 	methods: {

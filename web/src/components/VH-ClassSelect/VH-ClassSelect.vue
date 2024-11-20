@@ -147,8 +147,6 @@ export default {
 }
 
 .class-inner-box:hover{
-    //animation: showDropUp .5s;
-    //animation-fill-mode: forwards;
     box-shadow:  -3px -3px 9px #F3CA40, 3px 3px 7px #9C89B8;
 }
 

@@ -56,7 +56,6 @@ export default {
     height: 28px;
     border-radius: 6px;
     color: #61666D;
-    //font-size: 20px;
 }
 .search-input:hover{
     background-color: #F1F2F3;

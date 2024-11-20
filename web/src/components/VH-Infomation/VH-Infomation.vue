@@ -79,7 +79,7 @@ export default {
     created() {
         const origin = cookies.get('origin');
         this.origin=origin;
-        this.useravatar=config.baseUrl.url +'/file/avatar/'+ origin.avatar
+        this.useravatar=config.baseUrl.url +'file/avatar/'+ origin.avatar
     },
 
     methods:{
@@ -253,7 +253,6 @@ export default {
     height: 100%;
     background-color: #2D3047;
     border-radius: 6px;
-    //box-shadow: 0 3px 12px rgb(0 36 153 / 6%);
     display: flex;
 }
 .infomation-menu{
