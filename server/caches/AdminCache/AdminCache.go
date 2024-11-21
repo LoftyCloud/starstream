@@ -16,8 +16,6 @@ var ctx = context.Background()
 
 /**
  * @Descripttion: 存储后台二次编码状态 - Save back-end recode status
- * @Author: William Wu
- * @Date: 2022/07/06 下午 06:15
  */
 func SaveReCodeCountList(code int) {
 	err := conn.Set(ctx, "recode", code, time.Hour*2).Err()
@@ -30,8 +28,6 @@ func SaveReCodeCountList(code int) {
 
 /**
  * @Descripttion: 获取后台二次编码状态 - get back-end recode status
- * @Author: William Wu
- * @Date: 2022/07/06 下午 06:15
  */
 func GetReCodeCache() int {
 	res, err := conn.Get(ctx, "recode").Result()
@@ -44,8 +40,6 @@ func GetReCodeCache() int {
 
 /**
  * @Descripttion: 删除后台二次编码状态缓存 - Delete back-end recode status cache
- * @Author: William Wu
- * @Date: 2022/07/06 下午 06:15
  */
 func ReCodeDeleteCaches() {
 	_, err := conn.Del(ctx, "recode").Result()

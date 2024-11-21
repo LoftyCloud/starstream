@@ -16,8 +16,6 @@ var ctx = context.Background()
 
 /**
  * @Descripttion: 设置分布式锁 - Set Distributed Lock
- * @Author: William Wu
- * @Date: 2022/07/14 下午 03:20
  * @Param: lock (int)
  * @Return: Result (int)
  */
@@ -33,8 +31,6 @@ func LockFunc(key string, lock int) int {
 
 /**
  * @Descripttion: 获取分布式锁 - Get Distributed Lock
- * @Author: William Wu
- * @Date: 2022/07/14 下午 03:22
  * @Return: Result (int)
  */
 func GetLock(key string) int {
@@ -48,8 +44,6 @@ func GetLock(key string) int {
 
 /**
  * @Descripttion: 删除分布式锁 - Delete Distributed Lock
- * @Author: William Wu
- * @Date: 2022/07/14 下午 03:22
  */
 func UnLockFunc(key string) {
 	_, err := conn.Del(ctx, key).Result()

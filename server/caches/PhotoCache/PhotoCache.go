@@ -20,8 +20,6 @@ var ctx = context.Background()
 
 /**
  * @Descripttion: 图片数据存入Redis - Photo Data Save Redis
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:10
  * @Param: PhotoModel PhotoModelRe
  */
 func PhotoWriteListCache(photoData []PhotoModel.PhotoModelRe) {
@@ -40,8 +38,6 @@ func PhotoWriteListCache(photoData []PhotoModel.PhotoModelRe) {
 
 /**
  * @Descripttion: Redis读取图片数据 - Read Photo Data From Rredis
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:12
  * @Param: page (int)
  * @Param: size (int)
  * @Return: VideoModel VideoRe
@@ -72,8 +68,6 @@ func PhotoGetListCache(page int, size int) []PhotoModel.PhotoModelRe {
 
 /**
  * @Descripttion: 存入图片总数 - Save Photo Count
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:14
  * @Param: count (int)
  */
 func PhotoSaveCountList(count int) {
@@ -86,8 +80,6 @@ func PhotoSaveCountList(count int) {
 
 /**
  * @Descripttion: 从Redis获取图片总数 - Total number of photos obtained from redis
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:16
  */
 func PhotoGetCount() int {
 	count, err := conn.Get(ctx, "photocount").Result()
@@ -100,8 +92,6 @@ func PhotoGetCount() int {
 
 /**
  * @Descripttion: 从已经存储的Redis图片数据获取集合总数 - Total number of collections obtained from stored redis photo data
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:17
  */
 func GetReidsPhotoListCount() int {
 	count, err := conn.ZCard(ctx, "photodata").Result()
@@ -113,8 +103,6 @@ func GetReidsPhotoListCount() int {
 
 /**
  * @Descripttion: 删除图片缓存 - Delete photo cache
- * @Author: William Wu
- * @Date: 2022/07/08 下午 11:17
  */
 func PhotoDeleteCaches() {
 	_, err := conn.Del(ctx, "photodata", "photocount").Result()

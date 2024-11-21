@@ -18,8 +18,6 @@ var ctx = context.Background()
 
 /**
  * @Descripttion: 视频分类存入到Redis - Video Class Save Redis
- * @Author: William Wu
- * @Date: 2022/06/03 下午 02:41
  * @Param: ClassModel.ClassRe
  */
 func ClassWriteCache(classData []ClassModel.ClassRe) {
