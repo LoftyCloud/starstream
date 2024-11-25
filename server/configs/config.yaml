@@ -4,7 +4,7 @@
 #HTTP设置
 #HTTP Configuration
 http:
-  port: 80
+  port: 8669
 
 #MySQL 数据库连接配置文件
 #MySQL Database Connection Configuration File
@@ -12,8 +12,10 @@ database:
   host: 127.0.0.1 #数据库地址 - DataBase Address
   port: 3306 #数据库端口 - DataBase Port
   databasename: vhsql #数据库名 - DataBase Name
-  username: Hui #数据库账号 - DataBase Account
-  password: admin123 #数据库密码 - DataBase Password
+  # username: Hui #数据库账号 - DataBase Account
+  # password: admin123 #数据库密码 - DataBase Password
+  username: vhsql #数据库账号 - DataBase Account
+  password: vhsql #数据库密码 - DataBase Password
 
 #Redis 设置
 #Redis Configuration
@@ -26,18 +28,32 @@ redis:
 
 #文件池路径
 #File Pool Path
+# files:
+#   maxSize: 3072 #视频最大上传文件大小 - Max Video Upload Size
+#   user: #用户环境类 - User Path Class
+#     userAvatar: "E:/JOB/starstream-master/Files/Avatar/" #用户头像存放文件路径 - User Avatar Storage Path
+#   video: #视频存放路径 - Video Storage Path
+#     saveFile: "E:/JOB/starstream-master/Files/Save/" #视频存储位置 - Video Storage Location
+#     tempFile: "E:/JOB/starstream-master/Files/GoTest/" #视频临时存储位置 - Temporary Video Storage Location
+#     coverFile: "E:/JOB/starstream-master/Files/Cover/" #视频封面存储位置 - Video Cover Storage Location
+#   waste: #回收站 - Recycle bin
+#     file: "E:/JOB/starstream-master/Files/Rubbish/"
+#   photo: #图片文件夹 - Photo Path
+#     file: "E:/JOB/starstream-master/Files/GoTest/"
+
+
 files:
   maxSize: 3072 #视频最大上传文件大小 - Max Video Upload Size
   user: #用户环境类 - User Path Class
-    userAvatar: "E:/JOB/starstream-master/Files/Avatar/" #用户头像存放文件路径 - User Avatar Storage Path
+    userAvatar: "/www/wwwroot/Files/Avatar/" #用户头像存放文件路径 - User Avatar Storage Path
   video: #视频存放路径 - Video Storage Path
-    saveFile: "E:/JOB/starstream-master/Files/Save/" #视频存储位置 - Video Storage Location
-    tempFile: "E:/JOB/starstream-master/Files/GoTest/" #视频临时存储位置 - Temporary Video Storage Location
-    coverFile: "E:/JOB/starstream-master/Files/Cover/" #视频封面存储位置 - Video Cover Storage Location
+    saveFile: "/www/wwwroot/Files/Save/" #视频存储位置 - Video Storage Location
+    tempFile: "/www/wwwroot/Files/GoTest/" #视频临时存储位置 - Temporary Video Storage Location
+    coverFile: "/www/wwwroot/Files/Cover/" #视频封面存储位置 - Video Cover Storage Location
   waste: #回收站 - Recycle bin
-    file: "E:/JOB/starstream-master/Files/Rubbish/"
+    file: "/www/wwwroot/Files/Rubbish/"
   photo: #图片文件夹 - Photo Path
-    file: "E:/JOB/starstream-master/Files/GoTest/"
+    file: "/www/wwwroot/Files/GoTest/"
 
 #JWT 设置
 #JWT Configuration

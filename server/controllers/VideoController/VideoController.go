@@ -239,7 +239,7 @@ func UploadVideo_StreamFile(ctx *gin.Context) {
 
 	fileSuffix := path.Ext(header.Filename) // 获取文件后缀
 	if fileSuffix != ".mp4" {
-		ctx.JSON(http.StatusOK, JsonUtils.JsonResult(201, "文件类型不符合要求 - Document type does not meet requirements", ""))
+		ctx.JSON(http.StatusOK, JsonUtils.JsonResult(201, "文件需要为MP4类型 - Document type does not meet requirements", ""))
 		return
 	}
 	// 保存视频文件

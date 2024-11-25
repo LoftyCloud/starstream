@@ -1764,3 +1764,27 @@
 2024/11/20 17:25:12 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
 2024/11/20 17:25:23 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
 2024/11/20 17:25:27 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:13:48 [Redis启动失败-Redis start fail] 错误-Error：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:14:01 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:14:04 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:14:10 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:14:15 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:01 [IO操作异常 - IO operation exception] 删除文件时出现异常 Delete file operation exception：remove E:/JOB/starstream-master/Files/Avatar//9bc06f8d-7c05-527a-91f8-beb2d9c9774d.jpg: The system cannot find the file specified.
+2024/11/24 18:15:01 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:08 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:08 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:09 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:40 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:41 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:15:59 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:16:55 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:16:59 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:18:21 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:18:29 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 18:18:30 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 19:18:12 [Redis启动失败-Redis start fail] 错误-Error：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 19:18:23 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 19:18:24 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 20:09:20 [Redis启动失败-Redis start fail] 错误-Error：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 20:09:24 [Redis操作]获取classdata时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.
+2024/11/24 20:09:26 [Redis操作]删除videodata,videocount时异常：dial tcp 127.0.0.1:6379: connectex: No connection could be made because the target machine actively refused it.

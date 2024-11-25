@@ -31,14 +31,19 @@ import (
 func Router(router *gin.Engine) *gin.Engine {
 	r := gin.Default()
 
+	// CORS 中间件 - 配置 CORS
 	r.Use(func(c *gin.Context) {
-		c.Header("Access-Control-Allow-Origin", "*") // 允许所有来源
-		c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-		c.Header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept")
+		// 设置 CORS 头部
+		c.Header("Access-Control-Allow-Origin", "*")                                            // 允许所有来源（如果只允许某个前端，替换 "*" 为前端地址）
+		c.Header("Access-Control-Allow-Methods", "GET, POST, OPTIONS, PUT, DELETE")             // 支持的方法
+		c.Header("Access-Control-Allow-Headers", "Origin, Content-Type, Accept, Authorization") // 允许的请求头
+
+		// 允许浏览器发送OPTIONS预检请求并返回204
 		if c.Request.Method == http.MethodOptions {
 			c.AbortWithStatus(http.StatusNoContent)
 			return
 		}
+		// 继续执行下一个中间件或处理请求
 		c.Next()
 	})
 
