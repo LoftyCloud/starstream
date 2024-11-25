@@ -129,7 +129,7 @@ export default {
         this.$emit('reset');
     },
 
-		onClickVideo(){
+	onClickVideo(){
         let json ={'vid':this.vid,'uid':this.uid,'titile':this.title,'master':this.master}
         this.$emit('go',json);
     },

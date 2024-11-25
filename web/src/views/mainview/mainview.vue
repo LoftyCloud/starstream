@@ -90,8 +90,10 @@ export default {
 			this.showDlialog = false
 			this.getVideoData(this.curPage,21,this.cid)
 		},
+
 		goVideo(json){
-			window.open('./video?vid='+json, '_blank')
+			console.log(location.origin);
+			window.open(location.origin + '/video?vid='+json, '_blank')
 		},
 
 		goSearch(search){
